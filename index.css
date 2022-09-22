@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #b1aeae;
+    
+    z-index: 1;
+}
+.container{
+    z-index: 300;
+    width: 350px;
+    height: 650px;
+    background: rgb(0, 0, 0);
+    border-radius: 45px;
+    transition: background 17ms;
+    /* box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),0.3em 0.3em 1em rgba(0, 0, 0, 0.3); */
+}
+
+.container input[type="text"]{
+    width: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    padding: 10px 10px;
+    font-size: 16px;
+
+}
+.container .inputBox{
+    width:50%;
+    background:rgb(163, 152, 152);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10%;
+    left:5%;
+  
+}
+
+.button{
+    position: relative;
+    width:5px;
+    background: rgb(0, 0, 0);
+    border-radius: 20px;
+}
+.small-left{
+    position:relative;
+    top: 15%;
+    left:-1%;  
+    height: 30px;  
+}
+
+
+.volume{
+   position: relative;
+   top:20%;
+   left: -1%;
+   height:50px;
+}
+.down-left{
+  margin-top: 10px;
+}
+
+.power-right{
+    position: relative;
+    top:10%;
+    right: -99.5%;
+    height:70px;
+    
+}
+.container:hover{
+    background-image: url("https://cdn.ytechb.com/wp-content/uploads/2022/09/iPhone-14-Pro-Wallpaper-Silver.webp") ;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:contain;
+    border:10px solid black;
+    
+}
+
+.container:hover .small-left{
+    position: relative;
+    left: -13px;
+    top:14%;
+}
+.container:hover .volume{
+    position: relative;
+    left: -13px;
+    top:19%;
+}
+.container:hover .power-right{
+    position: relative;
+    right:  -102.5%;
+    top:8.8%;
+}
+.notch{
+    position: relative;
+    width:100px;
+    height:30px;
+    background: black;
+    position: relative;
+    top: -32%;
+    left: 115px;
+    border-radius: 50px;
+    transition: all 0.6s;
+    z-index: 1000;
+    color: red;
+    justify-content: space-between;
+    
+}
+
+.notch:hover{
+    width:250px;
+    height: 30px;
+    position: relative;
+    left: 40px;
+}
+
+.fa-solid{
+    width:40px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    text-align: center;
+    transform: translateY(6px);
+    margin-left: 15px;
+    background: red;
+    border-radius: 20px;
+    display: none;
+}
+
+span{
+    padding-right: 20px;
+    float:right;
+    transform: translateY(-12px);
+    display: none;
+}
+.notch:hover .fa-solid{
+    display:block;
+}
+.notch:hover span{
+    display: block;
+}
