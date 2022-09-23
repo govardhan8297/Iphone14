@@ -120,6 +120,7 @@ body{
     height: 30px;
     position: relative;
     left: 40px;
+    cursor:pointer;
 }
 
 .fa-solid{
