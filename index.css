@@ -108,10 +108,11 @@ body{
     top: -32%;
     left: 115px;
     border-radius: 50px;
-    transition: all 0.6s;
+    transition: all 0.7s;
     z-index: 1000;
-    color: red;
+    /* color: white; */
     justify-content: space-between;
+    /* pointer-events: none; */
     
 }
 
@@ -120,7 +121,8 @@ body{
     height: 30px;
     position: relative;
     left: 40px;
-    cursor:pointer;
+    cursor: pointer;
+    display: flex;
 }
 
 .fa-solid{
@@ -129,23 +131,85 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 19px;
-    text-align: center;
-    transform: translateY(6px);
-    margin-left: 15px;
-    background: red;
-    border-radius: 20px;
     display: none;
+    /* transform: translateY(5px); */
+    /* justify-content: space-between; */
 }
 
-span{
-    padding-right: 20px;
-    float:right;
-    transform: translateY(-12px);
+.caller{
+    /* padding-right: 20px; */
+    /* float:left; */
+    /* transform: translateY(7px); */
+    /* margin-left: 10px; */
+    position: relative;
+    top:7px;
     display: none;
+    height: 20px;
+    /* width: 500px; */
+    color: white;
+    /* z-index: 10000; */
+    overflow: hidden;
+
+}
+.answer{
+    color: green;
+    /* margin-right: 15px; */
+    /* margin-top: 10px; */
+    
+    position: relative;
+    top: 20%;
+    left: -15%;
+}
+.end{
+    color: red;
+    transform: rotate(135deg);
+    position: relative;
+    top: 5px;
+    right:-20%;
+
+}
+.container:not(:hover) .camera{
+    position: absolute;
+    top:20px;
+    left: 50px;
+}
+.camera{
+    position: absolute;
+    top:5px;
+    left: 40px;
+    width: 20px;
+    height: 20px;
+    color: rgb(177, 18, 18);
+    z-index: 10000;
+    border: 0.1px solid rgb(19, 19, 19);
+    border-radius: 50%;
+    /* box-shadow: inset 1px 0.1px rgb(19, 19, 19); */
 }
 .notch:hover .fa-solid{
     display:block;
 }
-.notch:hover span{
+.notch:hover .caller{
+    margin-left: 15px;
+    height: 20px;
+    letter-spacing: 1px;
     display: block;
+    /* width: 100%; */
+    overflow: hidden;
 }
+.notch:hover .camera{
+    position: relative;
+    top:5px;
+    left: 0px;
+}
+/* .answer-color{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: green;
+   position: relative;
+   top: 10px;
+   left: -60px;
+   z-index: 100;
+   overflow: hidden;
+   display: none;
+} */
