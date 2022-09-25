@@ -43,8 +43,12 @@ function onmouseclick() {
   // end.style.marginTop = "10px";
   end.style.paddingTop = "10px";
   end.style.marginTop = "";
+  end.style.marginRight = "10px";
+
   end.style.paddingLeft = "10px";
   answer.style.marginTop = "10px";
+  answer.style.marginRight = "-5px";
+
   answer.style.paddingTop = "10px";
   answer.style.paddingLeft = "10px";
 }
