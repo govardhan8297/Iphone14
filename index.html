@@ -9,12 +9,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
 
-    <title>Iphone 14 pro Model Design</title>
+    <title>Iphone 14 pro Dynamic Island</title>
     <link rel="stylesheet" href="index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="index.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -22,9 +27,14 @@
       <div class="button volume up-left"></div>
       <div class="button volume down-left"></div>
       <div class="button power-right"></div>
-      <div class="notch">
-        <i class="fa-solid fa-bell-slash"></i>
-        <span>Silent</span>
+
+      <div class="notch" onclick="onmouseclick()" onmouseleave="leave()">
+        <span class="caller">Naga Calling</span>
+        <!-- <span class="camera"></span> -->
+        <i class="fa-solid fa-phone end"></i>
+        <i class="fa-solid fa-phone answer"></i>
+        <!-- <span class="answer-color"></span> -->
+        <!-- <span class="end-color"></span> -->
       </div>
     </div>
   </body>
