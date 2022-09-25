@@ -47,7 +47,7 @@ function onmouseclick() {
 
   end.style.paddingLeft = "10px";
   answer.style.marginTop = "10px";
-  answer.style.marginRight = "-5px";
+//   answer.style.marginRight = "-5px";
 
   answer.style.paddingTop = "10px";
   answer.style.paddingLeft = "10px";
