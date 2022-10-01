@@ -151,6 +151,10 @@ body{
     overflow: hidden;
 
 }
+
+a{
+    text-decoration: none;
+}
 .answer{
     color: green;
     /* margin-right: 15px; */
@@ -158,16 +162,17 @@ body{
     
     position: relative;
     top: 20%;
-    left: -15%;
+    right: 15%;
 }
 .end{
     color: red;
     transform: rotate(135deg);
-    position: relative;
-    top: 5px;
-    right:-20%;
+   position: relative;
+   top: 25%;
+   left:20%;
 
 }
+
 .container:not(:hover) .camera{
     position: absolute;
     top:20px;
