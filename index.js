@@ -7,7 +7,7 @@ function onmouseclick() {
   // answer.style.fontSize = "25px";
   // answer.style.transform = "translateY(-25px)";
   answer.style.top = "0px";
-  answer.style.left = "-60px";
+  answer.style.right = "55px";
   // var ctx = answer.getContext("2d");
   // ctx.rotate((20 * Math.PI) / 180);
   // answer.style.transform = "rotate(-270deg)";
@@ -47,10 +47,18 @@ function onmouseclick() {
 
   end.style.paddingLeft = "10px";
   answer.style.marginTop = "10px";
-//   answer.style.marginRight = "-5px";
+  //   answer.style.marginRight = "-5px";
 
   answer.style.paddingTop = "10px";
   answer.style.paddingLeft = "10px";
+}
+function call() {
+  location.href = "tel:+918297297845";
+}
+
+function cut() {
+  const notch = document.querySelector(".notch");
+  notch.style.height = "30px";
 }
 
 function leave() {
@@ -68,7 +76,8 @@ function leave() {
   end.style.color = "red";
   answer.style.marginTop = "-4px";
   end.style.marginTop = "-14px";
-
+  end.style.left = "50px";
+  answer.style.top = "0px";
   answer.style.backgroundColor = "";
   end.style.backgroundColor = "";
 }
